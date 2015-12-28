@@ -1,5 +1,5 @@
 var config = {
-    lang: 'nl',
+    lang: 'en',
     time: {
         timeFormat: 12
     },
@@ -7,11 +7,11 @@ var config = {
         //change weather params here:
         //units: metric or imperial
         params: {
-            q: 'Baarn,Netherlands',
-            units: 'metric',
+            q: 'Miamisburg, OH',
+            units: 'imperial',
             // if you want a different lang for the weather that what is set above, change it here
-            lang: 'nl',
-            APPID: 'YOUR_FREE_OPENWEATHER_API_KEY'
+            lang: 'en',
+            APPID: '3b974d547d83518e75c9e8e55ba811e6'
         }
     },
     compliments: {
@@ -35,9 +35,19 @@ var config = {
     },
     calendar: {
         maximumEntries: 10,
-        url: "https://p01-calendarws.icloud.com/ca/subscribe/1/n6x7Farxpt7m9S8bHg1TGArSj7J6kanm_2KEoJPL5YIAk3y70FpRo4GyWwO-6QfHSY5mXtHcRGVxYZUf7U3HPDOTG5x0qYnno1Zr_VuKH2M"
+        url: "https://p18-calendars.icloud.com/published/2/_HBu5Y3IKT_IcuC-8Giwgrtb-X115rYMYEik3IdWZfZIunbeLTKI_aAF4Boa-HwS6BSdTwDkD_FWnvciy0iUo3rvJRhLkDhvXS4Nlc844iQ"
     },
     news: {
         feed: 'http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml'
+    },
+    map: {
+        location1: {
+            text: "to the mall",
+            url: "http://maps.googleapis.com/maps/api/directions/json?origin=8898%20Fox%20Glove%20Way,%20Miamisburg,%20OH%2045342,%20USA&destination=9100%20W%20Chester%20Towne%20Centre%20Rd,%20West%20Chester,%20OH%2045069,%20USA&alternatives=true&sensor=false"
+        },
+        location2: {
+            text: "to West Chester",
+            url: "http://maps.googleapis.com/maps/api/directions/json?origin=8898%20Fox%20Glove%20Way,%20Miamisburg,%20OH%2045342,%20USA&destination=2700%20Miamisburg%20Centerville%20Rd,%20Dayton,%20OH%2045459,%20USA&alternatives=true&sensor=false"
+        }
     }
 }
