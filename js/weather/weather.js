@@ -23,7 +23,7 @@ var weather = {
 		'50n':'wi-night-alt-cloudy-windy'
 	},
 	temperatureLocation: '.temp',
-	windSunLocation: '.windsun',
+	//windSunLocation: '.windsun',
 	forecastLocation: '.forecast',
 	apiVersion: '2.5',
 	apiBase: 'http://api.openweathermap.org/data/',

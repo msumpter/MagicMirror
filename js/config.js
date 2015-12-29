@@ -40,13 +40,13 @@ var config = {
     news: {
         feed: 'http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml'
     },
-    map: {
+    traffic: {
         location1: {
-            text: "to the mall",
+            text: " to West Chester",
             url: "http://maps.googleapis.com/maps/api/directions/json?origin=8898%20Fox%20Glove%20Way,%20Miamisburg,%20OH%2045342,%20USA&destination=9100%20W%20Chester%20Towne%20Centre%20Rd,%20West%20Chester,%20OH%2045069,%20USA&alternatives=true&sensor=false"
         },
         location2: {
-            text: "to West Chester",
+            text: " to the mall",
             url: "http://maps.googleapis.com/maps/api/directions/json?origin=8898%20Fox%20Glove%20Way,%20Miamisburg,%20OH%2045342,%20USA&destination=2700%20Miamisburg%20Centerville%20Rd,%20Dayton,%20OH%2045459,%20USA&alternatives=true&sensor=false"
         }
     }
