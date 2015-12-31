@@ -1,4 +1,5 @@
 <?php
+	header('Content-Type: application/json');
 	
 	// Set the url of the calendar feed.
 	$url = $_GET['url'];

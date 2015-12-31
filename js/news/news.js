@@ -10,7 +10,7 @@ var news = {
 	_yqlQS: '?format=json&q=select%20*%20from%20rss%20where%20url%3D',
 	_cacheBuster: Math.floor((new Date().getTime()) / 1200 / 1000),
 	_failedAttempts: 0,
-	fetchInterval: config.news.fetchInterval || 60000,
+	fetchInterval: config.news.fetchInterval || 1800000,
 	updateInterval: config.news.interval || 5500,
 	fadeInterval: 2000,
 	intervalId: null,

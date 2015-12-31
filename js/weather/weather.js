@@ -29,7 +29,7 @@ var weather = {
 	apiBase: 'http://api.openweathermap.org/data/',
 	weatherEndpoint: 'weather',
 	forecastEndpoint: 'forecast/daily',
-	updateInterval: config.weather.interval || 6000,
+	updateInterval: config.weather.interval || 1800000,
 	fadeInterval: config.weather.fadeInterval || 1000,
 	intervalId: null
 }
@@ -153,6 +153,8 @@ weather.updateWeatherForecast = function () {
 
 weather.init = function () {
 
+	this.updateCurrentWeather();
+
 	if (this.params.lang === undefined) {
 		this.params.lang = this.lang;
 	}
@@ -163,7 +165,7 @@ weather.init = function () {
 
 	this.intervalId = setInterval(function () {
 		this.updateCurrentWeather();
-		this.updateWeatherForecast();
+		//this.updateWeatherForecast();
 	}.bind(this), this.updateInterval);
 
 }

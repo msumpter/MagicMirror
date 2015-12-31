@@ -55,7 +55,7 @@ jQuery(document).ready(function($) {
 
 	weather.init();
 
-	news.init();
+	//news.init();
 
 	traffic.init();
 
